@@ -1,25 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Header from './components/Header.js';
+//Header.js파일에서 Header컴포넌트를 가져온다.
+import Slide from './components/Slide.js';
+//함수형 컴포넌트
+//App.jsx인데-javaScript Extension
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Header/>
+        <Slide/>
     </div>
   );
 }
-
 export default App;
